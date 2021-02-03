@@ -1,11 +1,12 @@
-.card-list-title{
+.card-title {
   margin-bottom: 12px;
   padding-left: 10px;
   line-height: 24px;
   font-size: 14px;
   font-weight: 500;
   position: relative;
-  &:before{
+
+  &:before {
     content: "";
     display: inline-block;
     position: absolute;
@@ -15,4 +16,10 @@
     left: 0;
     background-color: #2db7f5;
   }
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

@@ -30,7 +30,7 @@
       </div>
     </bn-card>
     <bn-collapse :data="collapse"/>
-    <bn-list-card header="列表" :dataSource="list"/>
+    <bn-list-card header="列表" :columns="listCardColumns" :dataSource="listCardDataSource"/>
     <bn-timeline :data="timeline"/>
     <bn-divider>
       少量的邪恶足以抵消全部高贵的品质, 害得人声名狼藉
@@ -62,6 +62,39 @@
   import Drawer from './drawers/Drawer'
   import AddUserDialog from './dialogs/AddUserDialog'
 
+  const listCardColumns = [
+    {
+      label: '基本信息',
+      children: [
+        {
+          label: '名称',
+          filedName: 'name'
+        },
+        {
+          label: '应用',
+          filedName: 'applicationName',
+          render: (createElement, data) => {
+            return createElement('bn-link', 'dasda-dasdasd')
+          }
+        },
+        {
+          label: '分区',
+          filedName: 'partitionName',
+          render: (createElement, data) => {
+            return createElement('bn-text-button','11-222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222')
+          }
+        },
+        {
+          label: '节点',
+          filedName: 'hostName',
+          render: (createElement, data) => {
+            return createElement('bn-text-button','11-222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222')
+          }
+        }
+      ]
+    }
+  ]
+
   export default {
     name: "index",
     data() {
@@ -92,6 +125,13 @@
             name: '王小虎',
             address: '上海市普陀区金沙江路 1518 弄'
           }],
+        listCardColumns,
+        listCardDataSource: {
+          name: 'default-token-6p2w5',
+          applicationName: 'temp001',
+          partitionName: 'cluster112-default',
+          hostName: 'host-default'
+        },
         list: [
           {
             label: '基础信息',
@@ -141,16 +181,17 @@
             content: '简化流程：设计简洁直观的操作流和概念；'
           }
         ],
-        timeline: [{
-          content: '活动按期开始',
-          timestamp: '2018-04-15'
-        }, {
-          content: '通过审核',
-          timestamp: '2018-04-13'
-        }, {
-          content: '创建成功',
-          timestamp: '2018-04-11'
-        }],
+        timeline: [
+          {
+            content: '活动按期开始',
+            timestamp: '2018-04-15'
+          }, {
+            content: '通过审核',
+            timestamp: '2018-04-13'
+          }, {
+            content: '创建成功',
+            timestamp: '2018-04-11'
+          }],
         value: '',
         srcList: [
           'https://fuss10.elemecdn.com/8/27/f01c15bb73e1ef3793e64e6b7bbccjpeg.jpeg',

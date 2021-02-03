@@ -1,9 +1,8 @@
 <template>
   <el-tooltip
-    v-bind="$attrs"
     :effect="effect"
     :content="content"
-    placement="placement"
+    :placement="placement"
   >
     <template slot="content" v-if="$slots.content">
       <slot name="content"></slot>
@@ -30,7 +29,3 @@
     }
   }
 </script>
-
-<style scoped>
-
-</style>

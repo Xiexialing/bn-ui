@@ -8,26 +8,29 @@
     <div slot="header" class="card__header" v-if="$slots.header">
       <slot name="header"/>
     </div>
-    <el-row :gutter="20" v-for="(item, index) in dataSource" :key="index">
+    <el-row :gutter="20" v-for="(item, index) in cardList" :key="index">
       <el-col :span="24">
-        <h1 class="card-list-title">{{item.label}}</h1>
+        <h1 class="card-title">{{item.label}}</h1>
       </el-col>
       <el-col
         v-for="(innerItem, innerIndex) in item.children"
-        :span="innerItem.span || 24 / splitNum"
+        :span="((item.children.length % 2 !== 0) && (innerIndex === item.children.length - 1)) ? 24 : innerItem.span || 24 / splitNum"
         :key="innerIndex"
       >
-        <p class="card-content-item" v-if="!innerItem.render">{{innerItem.label}}：{{innerItem.value}}</p>
-        <p class="card-content-item" v-else>
-          {{innerItem.label}}：
-          <ListRender :render="innerItem.render"/>
-        </p>
+        <p class="card-item" v-if="!innerItem.render">{{innerItem.label}}：{{innerItem.value}}</p>
+        <div class="card-item" v-else>
+          <span>{{innerItem.label}}：</span>
+          <div class="card-item-value ellipsis">
+            <ListRender class="ellipsis" :data="dataSource" :render="innerItem.render"/>
+          </div>
+        </div>
       </el-col>
     </el-row>
   </el-card>
 </template>
 
 <script>
+  import _ from 'lodash'
   import ListRender from './list-render'
 
   export default {
@@ -40,25 +43,31 @@
         type: String,
         default: "hover"
       },
-      dataSource: {
-        type: Array,
+      dataSource: {  // 详情
+        type: Object,
         default() {
-          return [
-            {
-              label: '',
-              children: [
-                {
-                  label: '',
-                  value: ''
-                }
-              ]
-            }
-          ]
+          return {}
         }
+      },
+      columns: {
+        type: Array
       },
       splitNum: {
         type: Number,
         default: 2
+      }
+    },
+    computed: {
+      cardList() {
+        const {dataSource, columns} = this
+        const data = _.cloneDeep(columns)
+        data.forEach(item => {
+          const {children} = item
+          children.forEach(child => {
+            child.value = dataSource[child.filedName]
+          })
+        })
+        return data
       }
     },
     components: {
@@ -79,9 +88,13 @@
       }
     }
 
-    .card-content-item {
+    .card-item {
+      display: flex;
       line-height: 28px;
       font-size: 14px;
+      .card-item-value{
+        flex: 1;
+      }
     }
   }
 </style>

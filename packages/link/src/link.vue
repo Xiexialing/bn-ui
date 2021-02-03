@@ -4,6 +4,7 @@
     :type="type"
     :underline="underline"
     @click="onClick"
+    class="link-wrapper"
   >
     <slot/>
   </el-link>
@@ -30,6 +31,14 @@
   }
 </script>
 
-<style scoped>
-
+<style lang="scss">
+  .link-wrapper{
+    max-width: 100%;
+    .el-link--inner{
+      max-width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
 </style>

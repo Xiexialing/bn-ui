@@ -46,7 +46,7 @@
             prop: 'address',
             label: '地址',
             render: (createElement, row) => {
-              return createElement('span', row.address)
+              return createElement('bn-text-button', row.address)
             }
           },
           {

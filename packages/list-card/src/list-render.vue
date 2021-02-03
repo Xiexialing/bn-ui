@@ -5,11 +5,14 @@
     props: {
       render: {
         type: Function
+      },
+      data: {
+        type: Object
       }
     },
     render(h, context) {
-      let {render} = context.props
-      return render(h)
+      let {render, data} = context.props
+      return render(h, data)
     }
   }
 </script>

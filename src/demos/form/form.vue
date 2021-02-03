@@ -1,5 +1,5 @@
 <template>
-  <bn-search-form
+  <bn-form
     :model="form"
     :rules="rules"
     :submit="submit"
@@ -129,7 +129,7 @@
         v-model="form.desc"
         @change="onChange"
       />
-  </bn-search-form>
+  </bn-form>
 </template>
 
 <script>
