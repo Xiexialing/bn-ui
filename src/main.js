@@ -120,8 +120,8 @@ Vue.use(searchForm)
 Vue.use(textButton)
 
 
-Vue.prototype.$tip = tip  // 提示语
-Vue.prototype.$affirm = affirm // 确认框
+Vue.prototype.$Tip = tip  // 提示语
+Vue.prototype.$Affirm = affirm // 确认框
 
 /* eslint-disable no-new */
 new Vue({

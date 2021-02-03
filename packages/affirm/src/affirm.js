@@ -12,8 +12,10 @@ export const affirm = ({message, title = '提示', name, callback}) => {
         instance.confirmButtonText = '执行中...'
         if (callback) {
           await callback()
-          instance.confirmButtonLoading = false
           done()
+          setTimeout(() => {
+            instance.confirmButtonLoading = false
+          }, 500)
         }
       } else {
         done()

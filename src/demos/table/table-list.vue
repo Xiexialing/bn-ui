@@ -61,8 +61,14 @@
               },
               {
                 key: ACTIONS_KEY_MAP.DEL,
-                action(row, index) {
-                  console.log(row, index)
+                action: (row, index) => {
+                  this.$Affirm({
+                    name: row.name,
+                    callback: async () => { // async 必须
+                      // 添加执行删除的api
+                      this.$Tip.success('删除成功')
+                    }
+                  })
                 }
               },
               {
