@@ -18,5 +18,7 @@ npm run build
 npm run build --report
 ```
 1.输入框添加trim功能
-
+2.补充text-button组件
+3.添加table text-button按钮超出...
+4.list-card 详情文字超出...
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
