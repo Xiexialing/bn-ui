@@ -6,6 +6,7 @@ import Backtop from '../packages/backtop/index.js';
 import Badge from '../packages/badge/index.js';
 import Breadcrumb from '../packages/breadcrumb/index.js';
 import Button from '../packages/button/index.js';
+import TextButton from '../packages/text-button/index.js';
 import Calendar from '../packages/calendar/index.js';
 import CancelButton from '../packages/cancel-button/index.js';
 import Card from '../packages/card/index.js';
@@ -73,6 +74,7 @@ const components = [
   Select,
   Option,
   Button,
+  TextButton,
   Table,
   DatePicker,
   TimePicker,
@@ -143,6 +145,7 @@ export default {
   Select,
   Option,
   Button,
+  TextButton,
   Table,
   DatePicker,
   TimePicker,
