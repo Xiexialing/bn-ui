@@ -70,6 +70,7 @@
       },
       onChange(value) {
         value = value.trim()
+        this.onInput(value)
         this.$emit('change', value)
       }
     }
