@@ -20,9 +20,9 @@
       <template slot="header">
         <span>卡片名称</span>
         <div>
-          <bn-button type="text">操作按钮1</bn-button>
-          <bn-button type="text">操作按钮2</bn-button>
-          <bn-button type="text">操作按钮3</bn-button>
+          <bn-text-button>操作按钮1</bn-text-button>
+          <bn-text-button>操作按钮2</bn-text-button>
+          <bn-text-button>操作按钮3</bn-text-button>
         </div>
       </template>
       <div v-for="o in 4" :key="o">

@@ -61,6 +61,7 @@ import affirm from '../packages/affirm'
 import router from './routers'
 
 import './assets/scss/common.scss'
+import './assets/iconfont/iconfont.css'
 
 Vue.config.productionTip = false
 

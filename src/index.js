@@ -54,6 +54,7 @@ import Upload from '../packages/upload/index.js';
 
 import {ACTIONS_KEY_MAP} from './constants/actionsMap'
 import './assets/scss/common.scss'
+import './assets/iconfont/iconfont.css'
 
 const components = [
   Pagination,

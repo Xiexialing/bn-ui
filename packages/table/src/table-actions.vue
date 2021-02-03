@@ -41,7 +41,7 @@ maxActions  number 直观显示按钮数，大于这个值时，部分按钮将�
         content="更多"
         placement="top"
       >
-        <bn-button
+        <el-button
           type="text"
           icon="el-icon-arrow-down"
         />
