@@ -6,6 +6,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 import App from './App'
 import button from '../packages/button'
 import textButton from '../packages/text-button'
+import linkButton from '../packages/link-button'
 import link from '../packages/link'
 import cancelButton from '../packages/cancel-button'
 import radio from '../packages/radio'
@@ -119,6 +120,7 @@ Vue.use(backtop)
 Vue.use(drawer)
 Vue.use(searchForm)
 Vue.use(textButton)
+Vue.use(linkButton)
 
 
 Vue.prototype.$Tip = tip  // 提示语

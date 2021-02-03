@@ -34,6 +34,13 @@
             width: '50px'
           },
           {
+            prop: 'projectName',
+            label: '应用名称',
+            render: (createElement, row) => {
+              return createElement('bn-link-button', row.projectName)
+            }
+          },
+          {
             prop: 'date',
             label: '日期',
             type: ''
@@ -94,7 +101,8 @@
       initPage() {
         this.loading = true
         setTimeout(() => {
-          this.dataSource = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(_ => ({
+          this.dataSource = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((_, index) => ({
+            projectName: '我是应用' + index,
             date: '2016-05-04',
             name: '王小虎' + Math.floor(Math.random() * 100),
             address: '上海市普陀区金沙江路上海市普陀区金沙江路上海市普陀区金沙江路上海市普陀区金沙江路上海市普陀区金沙江路上海市普陀区金沙江路 1517 弄'
