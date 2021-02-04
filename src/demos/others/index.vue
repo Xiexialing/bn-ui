@@ -76,6 +76,15 @@
           render: (createElement, data) => {
             return createElement('bn-link', 'dasda-dasdasd')
           }
+        },{
+          label: '数量1',
+          filedName: 'num',
+          default: 0
+        },
+        {
+          label: '数量2',
+          filedName: 'num2',
+          default: 0
         },
         {
           label: '分区',
@@ -127,7 +136,7 @@
           }],
         listCardColumns,
         listCardDataSource: {
-          name: 'default-token-6p2w5',
+          name: 'default-tokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentoken-6p2w5',
           applicationName: 'temp001',
           partitionName: 'cluster112-default',
           hostName: 'host-default'

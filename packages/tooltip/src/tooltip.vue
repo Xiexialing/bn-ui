@@ -3,6 +3,7 @@
     :effect="effect"
     :content="content"
     :placement="placement"
+    class="ellipsis"
   >
     <template slot="content" v-if="$slots.content">
       <slot name="content"></slot>

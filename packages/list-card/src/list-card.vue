@@ -17,11 +17,18 @@
         :span="((item.children.length % 2 !== 0) && (innerIndex === item.children.length - 1)) ? 24 : innerItem.span || 24 / splitNum"
         :key="innerIndex"
       >
-        <p class="card-item" v-if="!innerItem.render">{{innerItem.label}}：{{innerItem.value}}</p>
+        <p class="card-item ellipsis" v-if="!innerItem.render">
+          {{innerItem.label}}：
+          <bn-tooltip :content="(innerItem.value || innerItem.default).toString()">
+            <span>{{innerItem.value || innerItem.default}}</span>
+          </bn-tooltip>
+        </p>
         <div class="card-item" v-else>
           <span>{{innerItem.label}}：</span>
           <div class="card-item-value ellipsis">
-            <ListRender class="ellipsis" :data="dataSource" :render="innerItem.render"/>
+            <bn-tooltip :content="innerItem.value">
+              <ListRender class="ellipsis" :data="dataSource" :render="innerItem.render"/>
+            </bn-tooltip>
           </div>
         </div>
       </el-col>
@@ -92,7 +99,8 @@
       display: flex;
       line-height: 28px;
       font-size: 14px;
-      .card-item-value{
+
+      .card-item-value {
         flex: 1;
       }
     }
