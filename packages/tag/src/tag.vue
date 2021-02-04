@@ -1,10 +1,12 @@
 <template>
   <el-tag
     v-bind="$attrs"
-    :effect="effect"
+    :size="size"
     @click="onClick"
     @close="onClose"
-  >{{label}}
+  >
+    <slot v-if="$slots.default"/>
+    <span v-else>{{label}}</span>
   </el-tag>
 </template>
 
@@ -15,9 +17,9 @@
       label: {
         type: String,
       },
-      effect: {
+      size: {
         type: String,
-        default: 'dark'
+        default: 'small'
       }
     },
     methods: {

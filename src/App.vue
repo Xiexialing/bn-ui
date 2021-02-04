@@ -1,10 +1,10 @@
 <template>
   <div id="app">
 <!--     <Form/>-->
-<!--    <TableList/>-->
+<TableList/>
     <!--    <VData/>-->
     <!--    <Notice/>-->
- <Others/>
+<!-- <Others/>-->
     <!--    <router-view/>-->
   </div>
 </template>

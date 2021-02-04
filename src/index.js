@@ -11,6 +11,7 @@ import LinkButton from '../packages/link-button/index.js';
 import Calendar from '../packages/calendar/index.js';
 import CancelButton from '../packages/cancel-button/index.js';
 import Card from '../packages/card/index.js';
+import Status from '../packages/status/index.js';
 import Cascader from '../packages/cascader/index.js';
 import Checkbox from '../packages/checkbox/index.js';
 import Checkboxes from '../packages/checkboxes/index.js';
@@ -110,6 +111,7 @@ const components = [
   Avatar,
   Drawer,
   Popconfirm,
+  Status
 ];
 
 const install = function(Vue) {
@@ -182,5 +184,6 @@ export default {
   Avatar,
   Drawer,
   Popconfirm,
+  Status,
   ACTIONS_KEY_MAP
 };

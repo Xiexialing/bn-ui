@@ -18,7 +18,7 @@
 
 <script>
   import {ACTIONS_KEY_MAP} from '../../constants/actionsMap'
-
+  import {statusUtils} from '../../utils/getStatus'
   export default {
     name: "tableList",
     data() {
@@ -43,7 +43,17 @@
           {
             prop: 'date',
             label: '日期',
-            type: ''
+          },
+          {
+            prop: 'status',
+            label: '状态',
+            render: (createElement, row) => {
+              return createElement('bn-status', {
+                attrs: {
+                    ...statusUtils.cluster()
+                }
+              })
+            }
           },
           {
             prop: 'name',

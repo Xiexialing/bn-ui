@@ -24,4 +24,6 @@ npm run build --report
 4.list-card 详情文字超出...
 5.修复确认框重复提交bug
 6.添加iconfont
+7.添加link-button组件
+8.添加状态的统一处理解决方案
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
