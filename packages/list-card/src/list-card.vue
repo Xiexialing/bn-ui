@@ -8,6 +8,10 @@
     <div slot="header" class="card__header" v-if="$slots.header">
       <slot name="header"/>
     </div>
+    <div v-if="status" :style="statusStyle" class="card-status">
+      <i :class="dataSource.icon"></i>
+      <span>{{dataSource.label}}</span>
+    </div>
     <el-row :gutter="20" v-for="(item, index) in cardList" :key="index">
       <el-col :span="24">
         <h1 class="card-title">{{item.label}}</h1>
@@ -19,8 +23,8 @@
       >
         <p class="card-item ellipsis" v-if="!innerItem.render">
           {{innerItem.label}}：
-          <bn-tooltip :content="(innerItem.value || innerItem.default).toString()">
-            <span>{{innerItem.value || innerItem.default}}</span>
+          <bn-tooltip :content="innerItem.value">
+            <span>{{innerItem.value}}</span>
           </bn-tooltip>
         </p>
         <div class="card-item" v-else>
@@ -62,6 +66,9 @@
       splitNum: {
         type: Number,
         default: 2
+      },
+      status: {
+        type: Boolean
       }
     },
     computed: {
@@ -71,10 +78,18 @@
         data.forEach(item => {
           const {children} = item
           children.forEach(child => {
-            child.value = dataSource[child.filedName]
+            const value = dataSource[child.filedName]
+            child.value = (_.isNil(value) ? _.isNil(child.default) ? '-' : child.default : value) + ''
           })
         })
         return data
+      },
+      statusStyle() {
+        const {background, color} = this.dataSource
+        let styleStr = ''
+        if (background) styleStr += 'background-color:' + background + ';'
+        if (color) styleStr += 'color:' + (color || '#fff')
+        return styleStr
       }
     },
     components: {
@@ -95,14 +110,30 @@
       }
     }
 
-    .card-item {
-      display: flex;
-      line-height: 28px;
-      font-size: 14px;
+    .el-card__body {
+      position: relative;
 
-      .card-item-value {
-        flex: 1;
+      .card-status {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        padding: 5px 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        top: 20px;
+        right: 0;
+      }
+
+      .card-item {
+        display: flex;
+        line-height: 28px;
+        font-size: 14px;
+
+        .card-item-value {
+          flex: 1;
+        }
       }
     }
+
   }
 </style>

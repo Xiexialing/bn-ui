@@ -30,7 +30,7 @@
       </div>
     </bn-card>
     <bn-collapse :data="collapse"/>
-    <bn-list-card header="列表" :columns="listCardColumns" :dataSource="listCardDataSource"/>
+    <bn-list-card header="列表" :columns="listCardColumns" status :dataSource="listCardDataSource"/>
     <bn-timeline :data="timeline"/>
     <bn-divider>
       少量的邪恶足以抵消全部高贵的品质, 害得人声名狼藉
@@ -61,6 +61,7 @@
 <script>
   import Drawer from './drawers/Drawer'
   import AddUserDialog from './dialogs/AddUserDialog'
+  import {statusUtils} from "../../utils/getStatus";
 
   const listCardColumns = [
     {
@@ -84,7 +85,6 @@
         {
           label: '数量2',
           filedName: 'num2',
-          default: 0
         },
         {
           label: '分区',
@@ -139,7 +139,8 @@
           name: 'default-tokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentoken-6p2w5',
           applicationName: 'temp001',
           partitionName: 'cluster112-default',
-          hostName: 'host-default'
+          hostName: 'host-default',
+          ...statusUtils.cluster(1)
         },
         list: [
           {
