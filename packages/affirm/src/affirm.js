@@ -1,10 +1,10 @@
 import {MessageBox} from 'element-ui'
 
-export const affirm = ({message, title = '提示', name, callback}) => {
-  MessageBox.confirm(message = `您确认删除${name || '该数据'}吗？`, name ? '删除' + name : title, {
+export const affirm = ({message, title = '提示', name , type = 'warning', callback}) => {
+  MessageBox.confirm(message ? message : `您确认删除${name || '该数据'}吗？`, name ? '删除' + name : title, {
     confirmButtonText: '确定',
     cancelButtonText: '取消',
-    type: 'warning',
+    type,
     closeOnClickModal: false,
     beforeClose: async (action, instance, done) => {
       if (action === 'confirm') {
