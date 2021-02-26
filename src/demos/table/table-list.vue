@@ -17,8 +17,8 @@
 </template>
 
 <script>
-  import {ACTIONS_KEY_MAP} from '../../constants/actionsMap'
-  import {statusUtils} from '../../utils/getStatus'
+  import {ACTIONS_KEY_MAP} from '../../../src/constants/actionsMap'
+  import {statusUtils} from '../../utils/statusUtils'
   export default {
     name: "tableList",
     data() {

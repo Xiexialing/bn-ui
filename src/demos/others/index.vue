@@ -31,6 +31,27 @@
     </bn-card>
     <bn-collapse :data="collapse"/>
     <bn-list-card header="列表" :columns="listCardColumns" status :dataSource="listCardDataSource"/>
+    <el-row>
+      <el-col :span="12">
+        <el-col :span="12">
+          <bn-list-card header="列表" direction="tb" :split-num="3" :columns="listCardColumns2"
+                        :dataSource="listCardDataSource2"/>
+        </el-col>
+        <el-col :span="12">
+          <bn-list-card header="列表" direction="tb" :split-num="3" :columns="listCardColumns2"
+                        :dataSource="listCardDataSource2"/>
+        </el-col>
+        <el-col :span="12">
+          <bn-list-card header="列表" direction="tb" :split-num="3" :columns="listCardColumns2"
+                        :dataSource="listCardDataSource2"/>
+        </el-col>
+        <el-col :span="12">
+          <bn-list-card header="列表" direction="tb" :split-num="3" :columns="listCardColumns2"
+                        :dataSource="listCardDataSource2"/>
+        </el-col>
+      </el-col>
+    </el-row>
+
     <bn-timeline :data="timeline"/>
     <bn-divider>
       少量的邪恶足以抵消全部高贵的品质, 害得人声名狼藉
@@ -61,7 +82,7 @@
 <script>
   import Drawer from './drawers/Drawer'
   import AddUserDialog from './dialogs/AddUserDialog'
-  import {statusUtils} from "../../utils/getStatus";
+  import {statusUtils} from "../../utils/statusUtils";
 
   const listCardColumns = [
     {
@@ -77,7 +98,7 @@
           render: (createElement, data) => {
             return createElement('bn-link', 'dasda-dasdasd')
           }
-        },{
+        }, {
           label: '数量1',
           filedName: 'num',
           default: 0
@@ -90,15 +111,36 @@
           label: '分区',
           filedName: 'partitionName',
           render: (createElement, data) => {
-            return createElement('bn-text-button','11-222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222')
+            return createElement('bn-text-button', '11-222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222')
           }
         },
         {
           label: '节点',
           filedName: 'hostName',
           render: (createElement, data) => {
-            return createElement('bn-text-button','11-222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222')
+            return createElement('bn-text-button', '11-222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222')
           }
+        }
+      ]
+    }
+  ]
+
+  const listCardColumns2 = [
+    {
+      label: '控制节点',
+      children: [
+        {
+          label: '总数',
+          filedName: 'total'
+        },
+        {
+          label: '正常',
+          filedName: 'normal'
+        },
+        {
+          label: '异常',
+          filedName: 'abnormal',
+          fontType: 'warning'
         }
       ]
     }
@@ -135,12 +177,18 @@
             address: '上海市普陀区金沙江路 1518 弄'
           }],
         listCardColumns,
+        listCardColumns2,
         listCardDataSource: {
           name: 'default-tokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentoken-6p2w5',
           applicationName: 'temp001',
           partitionName: 'cluster112-default',
           hostName: 'host-default',
           ...statusUtils.cluster(1)
+        },
+        listCardDataSource2: {
+          total: 12,
+          normal: 15,
+          abnormal: 13
         },
         list: [
           {
