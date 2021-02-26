@@ -53,8 +53,17 @@ import Tooltip from '../packages/tooltip/index.js';
 import Transfer from '../packages/transfer/index.js';
 import Tree from '../packages/tree/index.js';
 import Upload from '../packages/upload/index.js';
+import Pie from '../packages/pie/index.js';
+import Line from '../packages/line/index.js';
+import Bar from '../packages/bar/index.js';
+import Dashboard from '../packages/dashboard/index.js';
+import Liquid from '../packages/liquid/index.js';
+import Ratio from '../packages/ratio/index.js';
+import ChartLegend from '../packages/chart-legend/index.js';
+
 
 import {ACTIONS_KEY_MAP} from './constants/actionsMap'
+import {statusUtils} from './utils/statusUtils'
 import './assets/scss/common.scss'
 import './assets/iconfont/iconfont.css'
 
@@ -111,6 +120,13 @@ const components = [
   Avatar,
   Drawer,
   Popconfirm,
+  Pie,
+  Line,
+  Bar,
+  Dashboard,
+  Liquid,
+  Ratio,
+  ChartLegend,
   Status
 ];
 
@@ -185,5 +201,13 @@ export default {
   Drawer,
   Popconfirm,
   Status,
-  ACTIONS_KEY_MAP
+  Pie,
+  Line,
+  Bar,
+  Dashboard,
+  Liquid,
+  Ratio,
+  ChartLegend,
+  ACTIONS_KEY_MAP,
+  statusUtils
 };
