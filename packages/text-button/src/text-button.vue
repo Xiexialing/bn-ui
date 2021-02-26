@@ -1,5 +1,5 @@
 <template>
-  <el-button type="text" v-bind="$attrs" @click="onClick" class="button-wrapper ellipsis">
+  <el-button type="text" v-bind="$attrs" @click="onClick" class="button-wrapper text-ellipsis">
     <template v-if="$slots.default">
       <slot/>
     </template>

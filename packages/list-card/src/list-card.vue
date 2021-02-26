@@ -18,20 +18,20 @@
       </el-col>
       <el-col
         v-for="(innerItem, innerIndex) in item.children"
-        :span="((item.children.length % 2 !== 0) && (innerIndex === item.children.length - 1)) ? 24 : innerItem.span || 24 / splitNum"
+        :span="((item.children.length % splitNum !== 0) && (innerIndex === item.children.length - 1)) ? 24 : innerItem.span || 24 / splitNum"
         :key="innerIndex"
       >
-        <p class="card-item ellipsis" v-if="!innerItem.render">
-          {{innerItem.label}}：
+        <p class="card-item text-ellipsis" :class="direction === 'tb' ? 'card-item--vertical' : ''" v-if="!innerItem.render">
+          {{innerItem.label}}<span v-if="!direction">：</span>
           <bn-tooltip :content="innerItem.value">
-            <span>{{innerItem.value}}</span>
+            <span :class="'text-' + innerItem.fontType">{{innerItem.value}}</span>
           </bn-tooltip>
         </p>
         <div class="card-item" v-else>
           <span>{{innerItem.label}}：</span>
-          <div class="card-item-value ellipsis">
+          <div class="card-item-value text-ellipsis">
             <bn-tooltip :content="innerItem.value">
-              <ListRender class="ellipsis" :data="dataSource" :render="innerItem.render"/>
+              <ListRender class="text-ellipsis" :data="dataSource" :render="innerItem.render"/>
             </bn-tooltip>
           </div>
         </div>
@@ -69,6 +69,13 @@
       },
       status: {
         type: Boolean
+      },
+      direction: {
+        type: String,
+        validator(val) {
+          // tb top and bottom 上下方式
+          return ['tb', ''].indexOf(val) !== -1;
+        }
       }
     },
     computed: {
@@ -128,7 +135,10 @@
         display: flex;
         line-height: 28px;
         font-size: 14px;
-
+        &.card-item--vertical{
+          flex-direction: column-reverse;
+          text-align: center;
+        }
         .card-item-value {
           flex: 1;
         }

@@ -1,3 +1,9 @@
+$primary: #409EFF;
+$success: #67C23A;
+$warning: #E6A23C;
+$danger: #F56C6C;
+$info: #909399;
+
 .card-title {
   margin-bottom: 12px;
   padding-left: 10px;
@@ -14,12 +20,24 @@
     height: 14px;
     top: 5px;
     left: 0;
-    background-color: #2db7f5;
+    background-color: $primary;
   }
 }
 
-.ellipsis {
+.text-ellipsis {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.text-warning {
+  color: $warning;
+}
+
+figure, .figure {
+  padding: 12px;
+  position: relative;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 8px;
+  box-shadow: 0 0 45px rgba(0,0,0,0.2);
 }
