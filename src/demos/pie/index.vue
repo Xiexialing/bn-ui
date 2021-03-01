@@ -1,16 +1,26 @@
 <template>
-  <div style="width: 600px;">
-    <bn-pie :options="options"/>
-   <bn-line :options="options2"/>
-    <!--    <bn-bar :options="options3"/>-->
-    <bn-dashboard :options="options4"/>
-    <div style="width: 200px;">
+  <div style="width: 400px;">
+    <figure style="width: 400px; height: 300px;">
+      <bn-pie :options="options"/>
+    </figure>
+    <figure style="width: 400px; height: 300px;">
+      <bn-line :options="options2"/>
+    </figure>
+    <figure style="width: 400px; height: 300px;">
+      <bn-bar :options="options3"/>
+    </figure>
+    <figure style="width: 400px; height: 300px;">
+      <bn-dashboard :options="options4"/>
+    </figure>
+    <figure style="width: 100px; ">
       <bn-liquid :options="options5"/>
-    </div>
-    <bn-ratio :options="options6"/>
-    <div style="width: 300px; height: 200px;">
+    </figure>
+    <figure style="width: 400px; height: 300px;">
+      <bn-ratio :options="options6"/>
+    </figure>
+    <figure style="width: 300px; height: 200px;">
       <bn-chart-legend/>
-    </div>
+    </figure>
   </div>
 </template>
 

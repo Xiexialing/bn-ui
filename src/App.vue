@@ -1,10 +1,11 @@
 <template>
   <div id="app">
 <!--     <Form/>-->
-<TableList/>
+<!--<TableList/>-->
     <!--    <VData/>-->
     <!--    <Notice/>-->
-<!-- <Others/>-->
+<!--<Others/>-->
+    <Pie></Pie>
     <!--    <router-view/>-->
   </div>
 </template>
@@ -16,6 +17,7 @@
   import Notice from './demos/notice/notice'
   import Navigation from './demos/navigation/Navigation'
   import Others from './demos/others/index'
+  import Pie from './demos/pie/index'
 
   export default {
     name: 'App',
@@ -25,7 +27,8 @@
       VData,
       Notice,
       Navigation,
-      Others
+      Others,
+      Pie
     }
   }
 </script>
