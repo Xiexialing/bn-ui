@@ -1,7 +1,5 @@
 <template>
-  <figure>
     <v-charts :options="lineOptions" autoresize></v-charts>
-  </figure>
 </template>
 
 <script>
@@ -44,6 +42,7 @@
             trigger: 'axis'
           },
           legend: {
+            show: false,
             bottom: orient !== 'vertical' && !top && !bottom ? '6px' : 'auto',
             left: orient !== 'vertical' && !right && !left ? 'center' : 'auto',
             icon: 'diamond',

@@ -1,5 +1,5 @@
 <template>
-  <div class="figure">
+  <div>
     <svg viewBox="0 0 100 100" class="liquid-chart">
       <defs>
         <clipPath :id="clipId">

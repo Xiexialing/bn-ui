@@ -1,7 +1,5 @@
 <template>
-  <figure>
-    <v-charts :options="pieOptions" autoresize></v-charts>
-  </figure>
+  <v-charts :options="pieOptions" autoresize></v-charts>
 </template>
 
 <script>
@@ -72,6 +70,7 @@
           },
           tooltip: {trigger: 'item'},       // 滑动tooltip效果
           legend: {                         // 导航
+            show: false,
             bottom: orient !== 'vertical' && !top && !bottom ? '6px' : 'auto',
             left: orient !== 'vertical' && !right && !left ? 'center' : 'auto',
             icon: 'diamond'

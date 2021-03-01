@@ -1,7 +1,5 @@
 <template>
-  <figure>
     <v-charts :options="dashboardOptions" autoresize></v-charts>
-  </figure>
 </template>
 
 <script>
@@ -98,6 +96,7 @@
             }
           },
           legend: {
+            show: false,
             bottom: orient !== 'vertical' && !top && !bottom ? '6px' : 'auto',
             left: orient !== 'vertical' && !right && !left ? 'center' : 'auto',
             icon: 'diamond',

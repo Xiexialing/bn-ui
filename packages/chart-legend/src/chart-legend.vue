@@ -17,7 +17,7 @@
     props: {
       mode: {
         type: String,
-        default: 'vertical',
+        default: 'horizontal',
         validator(val) {
           return ['horizontal', 'vertical'].includes(val)
         }
