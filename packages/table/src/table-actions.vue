@@ -62,7 +62,7 @@ maxActions  number 直观显示按钮数，大于这个值时，部分按钮将�
   </div>
 </template>
 <script>
-  import {ACTIONS_MAP} from 'bn-ui/src/constants/actionsMap.js'
+  import {ACTIONS_MAP} from '@/constants/actionsMap.js'
 
   const generateActions = (originalActions) => {
     return originalActions.map(action => ({

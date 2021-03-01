@@ -12,7 +12,7 @@
 </template>
 
 <script>
-  import submitMixin from 'bn-ui/src/mixins/submit'
+  import submitMixin from '@/mixins/submit'
   export default {
     name: "BnSlider",
     props: {
