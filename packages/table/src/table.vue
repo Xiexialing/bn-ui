@@ -43,7 +43,7 @@
           v-else
           :key="index"
           v-bind="column"
-          :width="columns.width || '150px'"
+          :width="columns.width || '100px'"
         >
           <template slot-scope="{row, $index}">
             <TableActions
