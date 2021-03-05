@@ -37,6 +37,10 @@
 
 <style lang="scss">
   .card-wrapper {
+    .el-card__header{
+      padding: 10px 20px;
+      font-size: 14px;
+    }
     .card__header {
       display: flex;
       justify-content: space-between;
