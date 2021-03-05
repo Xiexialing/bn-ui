@@ -27,5 +27,6 @@ npm run build --report
 7.添加link-button组件
 8.添加对象状态的统一处理解决方案
 9.list-card详情默认值、状态解决方案
-1.0.7.添加常见图表组件、affirm添加提示信息自定义功能、按钮、list-card文本、table文字超出隐藏
+1.0.7-beta.添加常见图表组件、affirm添加提示信息自定义功能、按钮、list-card文本、table文字超出隐藏
+1.0.8 工具方法的引入路径修改
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
