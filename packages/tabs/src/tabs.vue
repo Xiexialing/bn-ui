@@ -52,6 +52,7 @@
     methods: {
       onTabClick({name, index}) {
         this.$emit('input', name)
+        this.$emit('change', name)
         const {cacheNameList, tabListComputed} = this
         const {isCache} = tabListComputed[Number(index)]
         if (isCache && !cacheNameList.includes(name)) {
