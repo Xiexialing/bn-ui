@@ -7,7 +7,7 @@
 
 <script>
   export default {
-    name: "BnCalendar",
+    name: "BocCalendar",
     props: {
       value: {
         type: Date | String,

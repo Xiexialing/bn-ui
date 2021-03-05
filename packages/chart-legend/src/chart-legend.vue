@@ -13,7 +13,7 @@
 
 <script>
   export default {
-    name: "BnChartLegend",
+    name: "BocChartLegend",
     props: {
       mode: {
         type: String,

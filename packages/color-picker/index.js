@@ -1,8 +1,8 @@
-import BnColorPicker from './src/color-picker';
+import BocColorPicker from './src/color-picker';
 
 /* istanbul ignore next */
-BnColorPicker.install = function(Vue) {
-  Vue.component(BnColorPicker.name, BnColorPicker);
+BocColorPicker.install = function(Vue) {
+  Vue.component(BocColorPicker.name, BocColorPicker);
 };
 
-export default BnColorPicker;
+export default BocColorPicker;

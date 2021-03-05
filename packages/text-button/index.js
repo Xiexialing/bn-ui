@@ -1,8 +1,8 @@
-import BnTextButton from './src/text-button';
+import BocTextButton from './src/text-button';
 
 /* istanbul ignore next */
-BnTextButton.install = function(Vue) {
-  Vue.component(BnTextButton.name, BnTextButton);
+BocTextButton.install = function(Vue) {
+  Vue.component(BocTextButton.name, BocTextButton);
 };
 
-export default BnTextButton;
+export default BocTextButton;

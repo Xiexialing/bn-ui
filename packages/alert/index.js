@@ -1,8 +1,8 @@
-import BnAlert from './src/alert';
+import BocAlert from './src/alert';
 
 /* istanbul ignore next */
-BnAlert.install = function(Vue) {
-  Vue.component(BnAlert.name, BnAlert);
+BocAlert.install = function(Vue) {
+  Vue.component(BocAlert.name, BocAlert);
 };
 
-export default BnAlert;
+export default BocAlert;

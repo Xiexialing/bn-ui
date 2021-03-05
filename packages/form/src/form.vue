@@ -7,8 +7,8 @@
   >
     <slot/>
     <el-form-item v-if="!$slots.footer">
-      <bn-button :loading="loading" @click="onSubmit"/>
-      <bn-cancel-button @click="onCancel"/>
+      <boc-button :loading="loading" @click="onSubmit"/>
+      <boc-cancel-button @click="onCancel"/>
     </el-form-item>
     <slot v-else name="footer" :loading="loading" :onSubmit="onSubmit"></slot>
   </el-form>
@@ -16,7 +16,7 @@
 
 <script>
   export default {
-    name: "BnForm",
+    name: "BocForm",
     props: {
       'label-width': {
         type: String,

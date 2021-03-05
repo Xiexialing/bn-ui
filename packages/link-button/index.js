@@ -1,8 +1,8 @@
-import BnLinkButton from './src/link-button';
+import BocLinkButton from './src/link-button';
 
 /* istanbul ignore next */
-BnLinkButton.install = function(Vue) {
-  Vue.component(BnLinkButton.name, BnLinkButton);
+BocLinkButton.install = function(Vue) {
+  Vue.component(BocLinkButton.name, BocLinkButton);
 };
 
-export default BnLinkButton;
+export default BocLinkButton;

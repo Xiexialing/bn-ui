@@ -5,9 +5,9 @@
 </template>
 
 <script>
-  import submitMixin from '@/mixins/submit'
+  import submitMixin from '../../../src/mixins/submit'
   export default {
-    name: "BnCheckbox",
+    name: "BocCheckbox",
     props: {
       value: {
         type: Boolean

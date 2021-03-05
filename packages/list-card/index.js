@@ -1,8 +1,8 @@
-import BnListCard from './src/list-card';
+import BocListCard from './src/list-card';
 
 /* istanbul ignore next */
-BnListCard.install = function(Vue) {
-  Vue.component(BnListCard.name, BnListCard);
+BocListCard.install = function(Vue) {
+  Vue.component(BocListCard.name, BocListCard);
 };
 
-export default BnListCard;
+export default BocListCard;

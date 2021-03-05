@@ -23,16 +23,16 @@
       >
         <p class="card-item text-ellipsis" :class="direction === 'tb' ? 'card-item--vertical' : ''" v-if="!innerItem.render">
           {{innerItem.label}}<span v-if="!direction">：</span>
-          <bn-tooltip :content="innerItem.value">
+          <boc-tooltip :content="innerItem.value">
             <span :class="'text-' + innerItem.fontType">{{innerItem.value}}</span>
-          </bn-tooltip>
+          </boc-tooltip>
         </p>
         <div class="card-item" v-else>
           <span v-if="innerItem.label">{{innerItem.label}}：</span>
           <div class="card-item-value text-ellipsis">
-            <bn-tooltip :content="innerItem.value">
+            <boc-tooltip :content="innerItem.value">
               <ListRender class="text-ellipsis" :data="dataSource" :render="innerItem.render"/>
-            </bn-tooltip>
+            </boc-tooltip>
           </div>
         </div>
       </el-col>
@@ -45,7 +45,7 @@
   import ListRender from './list-render'
 
   export default {
-    name: "BnListCard",
+    name: "BocListCard",
     props: {
       header: {
         type: String

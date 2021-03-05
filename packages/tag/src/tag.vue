@@ -12,7 +12,7 @@
 
 <script>
   export default {
-    name: "BnTag",
+    name: "BocTag",
     props: {
       label: {
         type: String,

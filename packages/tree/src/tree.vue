@@ -21,7 +21,7 @@
 
 <script>
   export default {
-    name: "BnTree",
+    name: "BocTree",
     props: {
       data: {
         type: Array

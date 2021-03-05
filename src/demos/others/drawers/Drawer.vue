@@ -1,7 +1,7 @@
 <template>
-  <bn-drawer :visible="visible" :submit="onSubmit" @close="onClose">
-    <bn-table :columns="columns" :data-source="dataSource" :loading="loading"/>
-  </bn-drawer>
+  <boc-drawer :visible="visible" :submit="onSubmit" @close="onClose">
+    <boc-table :columns="columns" :data-source="dataSource" :loading="loading"/>
+  </boc-drawer>
 </template>
 
 <script>

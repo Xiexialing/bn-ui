@@ -3,9 +3,9 @@
     v-bind="$attrs"
     @command="onCommand"
   >
-    <bn-button type="text">
+    <boc-button type="text">
       {{value}}<i class="el-icon-arrow-down el-icon--right"></i>
-    </bn-button>
+    </boc-button>
     <el-dropdown-menu slot="dropdown">
       <el-dropdown-item
         v-for="(item, index) in data"
@@ -22,7 +22,7 @@
   let cacheValue = ''
 
   export default {
-    name: "BnDropdown",
+    name: "BocDropdown",
     props: {
       data: {
         type: Array

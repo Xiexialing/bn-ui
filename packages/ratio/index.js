@@ -1,8 +1,8 @@
-import BnRatio from './src/ratio';
+import BocRatio from './src/ratio';
 
 /* istanbul ignore next */
-BnRatio.install = function(Vue) {
-  Vue.component(BnRatio.name, BnRatio);
+BocRatio.install = function(Vue) {
+  Vue.component(BocRatio.name, BocRatio);
 };
 
-export default BnRatio;
+export default BocRatio;

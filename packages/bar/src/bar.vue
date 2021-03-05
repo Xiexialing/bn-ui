@@ -18,7 +18,7 @@
   }
 
   export default {
-    name: 'BnBar',
+    name: 'BocBar',
     props: {
       options: {
         type: Object

@@ -117,7 +117,7 @@
   import shortid from 'shortid'
 
   export default {
-    name: 'BnLiquid',
+    name: 'BocLiquid',
     props: {
       options: {
         type: Object,

@@ -14,7 +14,7 @@
 
 <script>
   export default {
-    name: "BnCard",
+    name: "BocCard",
     props: {
       header: {
         type: String

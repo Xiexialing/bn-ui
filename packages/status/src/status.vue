@@ -1,5 +1,5 @@
 <template>
-  <bn-tag
+  <boc-tag
     v-bind="$attrs"
     @click="onClick"
     :style="style"
@@ -14,12 +14,12 @@
         <span>加载中...</span>
       </template>
     </span>
-  </bn-tag>
+  </boc-tag>
 </template>
 
 <script>
   export default {
-    name: "BnStatus",
+    name: "BocStatus",
     computed: {
       style() {
         const {background, color} = this.$attrs

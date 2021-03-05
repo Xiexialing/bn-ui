@@ -18,9 +18,9 @@
 </template>
 
 <script>
-  import submitMixin from '@/mixins/submit'
+  import submitMixin from '../../../src/mixins/submit'
   export default {
-    name: "BnDateTimePicker",
+    name: "BocDateTimePicker",
     props: {
       value: {
         type: String | Date

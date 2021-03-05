@@ -8,7 +8,7 @@
 
 <script>
   export default {
-    name: "BnBacktop",
+    name: "BocBacktop",
     props: {
       target: {
         type: String,

@@ -1,8 +1,8 @@
-import BnDatePicker from './src/date-picker';
+import BocDatePicker from './src/date-picker';
 
 /* istanbul ignore next */
-BnDatePicker.install = function(Vue) {
-  Vue.component(BnDatePicker.name, BnDatePicker);
+BocDatePicker.install = function(Vue) {
+  Vue.component(BocDatePicker.name, BocDatePicker);
 };
 
-export default BnDatePicker;
+export default BocDatePicker;

@@ -1,8 +1,8 @@
-import BnCancelButton from './src/cancel-button';
+import BocCancelButton from './src/cancel-button';
 
 /* istanbul ignore next */
-BnCancelButton.install = function(Vue) {
-  Vue.component(BnCancelButton.name, BnCancelButton);
+BocCancelButton.install = function(Vue) {
+  Vue.component(BocCancelButton.name, BocCancelButton);
 };
 
-export default BnCancelButton;
+export default BocCancelButton;

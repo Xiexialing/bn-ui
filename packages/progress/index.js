@@ -1,8 +1,8 @@
-import BnProgress from './src/progress';
+import BocProgress from './src/progress';
 
 /* istanbul ignore next */
-BnProgress.install = function (Vue) {
-  Vue.component(BnProgress.name, BnProgress);
+BocProgress.install = function (Vue) {
+  Vue.component(BocProgress.name, BocProgress);
 };
 
-export default BnProgress;
+export default BocProgress;

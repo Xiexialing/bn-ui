@@ -1,8 +1,8 @@
-import BnLiquid from './src/liquid';
+import BocLiquid from './src/liquid';
 
 /* istanbul ignore next */
-BnLiquid.install = function(Vue) {
-  Vue.component(BnLiquid.name, BnLiquid);
+BocLiquid.install = function(Vue) {
+  Vue.component(BocLiquid.name, BocLiquid);
 };
 
-export default BnLiquid;
+export default BocLiquid;

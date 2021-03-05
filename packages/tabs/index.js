@@ -1,8 +1,8 @@
-import BnTabs from './src/tabs';
+import BocTabs from './src/tabs';
 
 /* istanbul ignore next */
-BnTabs.install = function (Vue) {
-  Vue.component(BnTabs.name, BnTabs);
+BocTabs.install = function (Vue) {
+  Vue.component(BocTabs.name, BocTabs);
 };
 
-export default BnTabs;
+export default BocTabs;

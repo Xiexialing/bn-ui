@@ -1,6 +1,6 @@
 <template>
   <div>
-    <bn-table
+    <boc-table
       :columns="columns"
       :dataSource="dataSource"
       :size.sync="query.size"
@@ -12,7 +12,7 @@
       @select="onSelect"
       @select-all="onSelect"
     />
-    <bn-button @click="onClick">按钮</bn-button>
+    <boc-button @click="onClick">按钮</boc-button>
   </div>
 </template>
 
@@ -37,7 +37,7 @@
             prop: 'projectName',
             label: '应用名称',
             render: (createElement, row) => {
-              return createElement('bn-link-button', row.projectName)
+              return createElement('boc-link-button', row.projectName)
             }
           },
           {
@@ -48,7 +48,7 @@
             prop: 'status',
             label: '状态',
             render: (createElement, row) => {
-              return createElement('bn-status', {
+              return createElement('boc-status', {
                 attrs: {
                     ...statusUtils.cluster()
                 }
@@ -63,7 +63,7 @@
             prop: 'address',
             label: '地址',
             render: (createElement, row) => {
-              return createElement('bn-text-button', row.address)
+              return createElement('boc-text-button', row.address)
             }
           },
           {

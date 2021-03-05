@@ -1,8 +1,8 @@
-import BnDashboard from './src/dashboard';
+import BocDashboard from './src/dashboard';
 
 /* istanbul ignore next */
-BnDashboard.install = function(Vue) {
-  Vue.component(BnDashboard.name, BnDashboard);
+BocDashboard.install = function(Vue) {
+  Vue.component(BocDashboard.name, BocDashboard);
 };
 
-export default BnDashboard;
+export default BocDashboard;

@@ -1,8 +1,8 @@
-import BnCollapse from './src/collapse';
+import BocCollapse from './src/collapse';
 
 /* istanbul ignore next */
-BnCollapse.install = function(Vue) {
-  Vue.component(BnCollapse.name, BnCollapse);
+BocCollapse.install = function(Vue) {
+  Vue.component(BocCollapse.name, BocCollapse);
 };
 
-export default BnCollapse;
+export default BocCollapse;

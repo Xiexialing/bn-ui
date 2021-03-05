@@ -12,9 +12,9 @@
 </template>
 
 <script>
-  import submitMixin from '@/mixins/submit'
+  import submitMixin from '../../../src/mixins/submit'
   export default {
-    name: "BnSlider",
+    name: "BocSlider",
     props: {
       value: {
         type: Number

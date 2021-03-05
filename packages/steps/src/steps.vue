@@ -19,7 +19,7 @@
 
 <script>
   export default {
-    name: "BnSteps",
+    name: "BocSteps",
     props: {
       value: {
         type: Number,

@@ -1,8 +1,8 @@
-import BnPagination from './src/pagination';
+import BocPagination from './src/pagination';
 
 /* istanbul ignore next */
-BnPagination.install = function(Vue) {
-  Vue.component(BnPagination.name, BnPagination);
+BocPagination.install = function(Vue) {
+  Vue.component(BocPagination.name, BocPagination);
 };
 
-export default BnPagination;
+export default BocPagination;

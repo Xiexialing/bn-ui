@@ -1,8 +1,8 @@
-import BnPopconfirm from './src/popconfirm';
+import BocPopconfirm from './src/popconfirm';
 
 /* istanbul ignore next */
-BnPopconfirm.install = function(Vue) {
-  Vue.component(BnPopconfirm.name, BnPopconfirm);
+BocPopconfirm.install = function(Vue) {
+  Vue.component(BocPopconfirm.name, BocPopconfirm);
 };
 
-export default BnPopconfirm;
+export default BocPopconfirm;

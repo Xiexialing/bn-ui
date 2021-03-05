@@ -1,8 +1,8 @@
-import BnButton from './src/button';
+import BocButton from './src/button';
 
 /* istanbul ignore next */
-BnButton.install = function(Vue) {
-  Vue.component(BnButton.name, BnButton);
+BocButton.install = function(Vue) {
+  Vue.component(BocButton.name, BocButton);
 };
 
-export default BnButton;
+export default BocButton;

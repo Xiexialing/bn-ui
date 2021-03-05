@@ -12,15 +12,15 @@
       <slot/>
     </el-form>
     <div class="drawer__footer">
-      <bn-cancel-button @click="onCancel">取 消</bn-cancel-button>
-      <bn-button @click="onConfirm" :loading="loading">{{ loading ? '提交中 ...' : '确 定' }}</bn-button>
+      <boc-cancel-button @click="onCancel">取 消</boc-cancel-button>
+      <boc-button @click="onConfirm" :loading="loading">{{ loading ? '提交中 ...' : '确 定' }}</boc-button>
     </div>
   </el-drawer>
 </template>
 
 <script>
   export default {
-    name: "BnDrawer",
+    name: "BocDrawer",
     props: {
       visible: {
         type: Boolean

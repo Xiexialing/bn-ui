@@ -1,8 +1,8 @@
-import BnTimeline from './src/timeline';
+import BocTimeline from './src/timeline';
 
 /* istanbul ignore next */
-BnTimeline.install = function(Vue) {
-  Vue.component(BnTimeline.name, BnTimeline);
+BocTimeline.install = function(Vue) {
+  Vue.component(BocTimeline.name, BocTimeline);
 };
 
-export default BnTimeline;
+export default BocTimeline;

@@ -1,8 +1,8 @@
-import BnSlider from './src/slider';
+import BocSlider from './src/slider';
 
 /* istanbul ignore next */
-BnSlider.install = function(Vue) {
-  Vue.component(BnSlider.name, BnSlider);
+BocSlider.install = function(Vue) {
+  Vue.component(BocSlider.name, BocSlider);
 };
 
-export default BnSlider;
+export default BocSlider;

@@ -77,7 +77,7 @@
   import TableActions from './table-actions'
 
   export default {
-    name: 'BnTable',
+    name: 'BocTable',
     props: {
       columns: {
         type: Array

@@ -1,5 +1,5 @@
 <template>
-  <v-charts :options="pieOptions" autoresize></v-charts>
+    <v-charts :options="pieOptions" autoresize></v-charts>
 </template>
 
 <script>
@@ -48,7 +48,7 @@
   }
 
   export default {
-    name: "BnPie",
+    name: "BocPie",
     props: {
       options: {
         type: Object
@@ -62,6 +62,7 @@
         options.series = series.map(ser => _.merge(SERIES_ITEM, ser))  // 设置默认的series配置
         return _.merge({
           title: {
+            show: false,
             left: 'center',
             textStyle: {
               fontWeight: 'normal',

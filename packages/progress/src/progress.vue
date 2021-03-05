@@ -10,7 +10,7 @@
 
 <script>
   export default {
-    name: "BnProgress",
+    name: "BocProgress",
     props: {
       percentage: {
         type: Number

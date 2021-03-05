@@ -3,7 +3,7 @@
     <div
       class="menu-wrapper"
     >
-      <bn-menu
+      <boc-menu
         :data="menuList"
         background-color="#545c64"
         text-color="#fff"
@@ -11,22 +11,22 @@
       />
     </div>
     <div>
-      <bn-page-header></bn-page-header>
-      <bn-tabs :tabList="tabList" v-model="activeIndex">
+      <boc-page-header></boc-page-header>
+      <boc-tabs :tabList="tabList" v-model="activeIndex">
         <PartitionHosts slot="PartitionHosts"/>
         <PartitionApplications slot="PartitionApplications"/>
         <PartitionServices slot="PartitionServices"/>
         <PartitionInstances slot="PartitionInstances"/>
-      </bn-tabs>
-      <bn-breadcrumb :data="breadcrumb"></bn-breadcrumb>
-      <bn-dropdown
+      </boc-tabs>
+      <boc-breadcrumb :data="breadcrumb"></boc-breadcrumb>
+      <boc-dropdown
         v-model="value"
         :data="dropdown"
         @change="onChange"
         direction="vertical"
       />
-      <bn-button @click="onNext">下一步</bn-button>
-      <bn-steps
+      <boc-button @click="onNext">下一步</boc-button>
+      <boc-steps
         v-model="step"
         :data="dropdown"
       />

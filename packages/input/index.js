@@ -1,8 +1,8 @@
-import BnInput from './src/input';
+import BocInput from './src/input';
 
 /* istanbul ignore next */
-BnInput.install = function(Vue) {
-  Vue.component(BnInput.name, BnInput);
+BocInput.install = function(Vue) {
+  Vue.component(BocInput.name, BocInput);
 };
 
-export default BnInput;
+export default BocInput;

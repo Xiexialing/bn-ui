@@ -1,8 +1,8 @@
-import BnCascader from './src/cascader';
+import BocCascader from './src/cascader';
 
 /* istanbul ignore next */
-BnCascader.install = function(Vue) {
-  Vue.component(BnCascader.name, BnCascader);
+BocCascader.install = function(Vue) {
+  Vue.component(BocCascader.name, BocCascader);
 };
 
-export default BnCascader;
+export default BocCascader;

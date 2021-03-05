@@ -1,8 +1,8 @@
-import BnDivider from './src/divider';
+import BocDivider from './src/divider';
 
 /* istanbul ignore next */
-BnDivider.install = function(Vue) {
-  Vue.component(BnDivider.name, BnDivider);
+BocDivider.install = function(Vue) {
+  Vue.component(BocDivider.name, BocDivider);
 };
 
-export default BnDivider;
+export default BocDivider;

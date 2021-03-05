@@ -1,8 +1,8 @@
-import BnSearchForm from './src/search-form';
+import BocSearchForm from './src/search-form';
 
 /* istanbul ignore next */
-BnSearchForm.install = function(Vue) {
-  Vue.component(BnSearchForm.name, BnSearchForm);
+BocSearchForm.install = function(Vue) {
+  Vue.component(BocSearchForm.name, BocSearchForm);
 };
 
-export default BnSearchForm;
+export default BocSearchForm;

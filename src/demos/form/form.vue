@@ -1,11 +1,11 @@
 <template>
-  <bn-form
+  <boc-form
     :model="form"
     :rules="rules"
     :submit="submit"
     ref="form"
   >
-      <bn-input
+      <boc-input
         prop="name"
         label="名称"
         v-model="form.name"
@@ -14,67 +14,67 @@
         <!--      <i slot="suffix" class="el-input__icon el-icon-date"></i>-->
         <!--      <i slot="prefix" class="el-input__icon el-icon-search"></i>-->
         <!--      <el-button slot="append" icon="el-icon-search"></el-button>-->
-      </bn-input>
-      <bn-checkboxes
+      </boc-input>
+      <boc-checkboxes
         prop="hobbies"
         label="爱好"
         v-model="form.hobbies"
         @change="onChange"
         :options="options"
       />
-      <bn-upload
+      <boc-upload
         prop="files"
         label="文件上傳"
         v-model="form.fileName"
         @change="onChange"
       />
-      <bn-time-picker
+      <boc-time-picker
         label="时间"
         prop="timePicker"
         v-model="form.timePicker"
         @change="onChange"
       />
-      <bn-date-picker
+      <boc-date-picker
         label="日期"
         prop="datePicker"
         v-model="form.datePicker"
         @change="onChange"
       />
-      <bn-date-time-picker
+      <boc-date-time-picker
         prop="dateTimePicker"
         label="日期時間"
         v-model="form.dateTimePicker"
         @change="onChange"
       />
-      <bn-slider
+      <boc-slider
         label="滑块"
         prop="slider"
         v-model="form.slider"
         @change="onChange"
       />
-      <bn-rate
+      <boc-rate
         label="评分"
         prop="rate"
         v-model="form.rate"
         @change="onChange"
       />
-      <bn-color-picker
+      <boc-color-picker
         label="颜色"
         v-model="form.color"
         @change="onChange"
       />
-      <bn-checkbox
+      <boc-checkbox
         label="控制器"
         v-model="form.switchFlag"
         name="开关"
         @change="onChange"
       />
-      <bn-switch
+      <boc-switch
         prop="switchFlag"
         v-model="form.switchFlag"
         @change="onChange"
       />
-      <bn-select
+      <boc-select
         label="选择"
         v-model="form.selects"
         :options="options"
@@ -87,34 +87,34 @@
         <!--                  <span style="float: left">{{ row.label }}</span>-->
         <!--                  <span style="float: right; color: #8492a6; font-size: 13px">{{ row.value }}</span>-->
         <!--                </template>-->
-      </bn-select>
-      <bn-radio
+      </boc-select>
+      <boc-radio
         prop="type"
         label="类型"
         v-model="form.type"
         :options="options"
         @change="onChange"
       />
-      <bn-transfer
+      <boc-transfer
         prop="transfer"
         label="穿梭框"
         v-model="form.transfer"
         :options="data"
         @change="onChange"
       />
-      <bn-input-number
+      <boc-input-number
         prop="num"
         label="数量"
         v-model="form.num"
         @change="onChange"
       />
-      <bn-input-limit-number
+      <boc-input-limit-number
         prop="num"
         label="数量2"
         v-model="form.num2"
         @change="onChange"
       />
-      <bn-cascader
+      <boc-cascader
         prop="cascader"
         label="层级"
         v-model="form.cascader"
@@ -122,14 +122,14 @@
         :options="cascaderOpts"
         total
       />
-      <bn-input
+      <boc-input
         prop="desc"
         label="描述"
         type="textarea"
         v-model="form.desc"
         @change="onChange"
       />
-  </bn-form>
+  </boc-form>
 </template>
 
 <script>

@@ -1,8 +1,8 @@
-import BnBar from './src/bar';
+import BocBar from './src/bar';
 
 /* istanbul ignore next */
-BnBar.install = function(Vue) {
-  Vue.component(BnBar.name, BnBar);
+BocBar.install = function(Vue) {
+  Vue.component(BocBar.name, BocBar);
 };
 
-export default BnBar;
+export default BocBar;

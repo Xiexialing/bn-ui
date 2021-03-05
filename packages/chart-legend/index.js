@@ -1,8 +1,8 @@
-import BnChartLegend from './src/chart-legend';
+import BocChartLegend from './src/chart-legend';
 
 /* istanbul ignore next */
-BnChartLegend.install = function(Vue) {
-  Vue.component(BnChartLegend.name, BnChartLegend);
+BocChartLegend.install = function(Vue) {
+  Vue.component(BocChartLegend.name, BocChartLegend);
 };
 
-export default BnChartLegend;
+export default BocChartLegend;

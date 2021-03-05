@@ -21,10 +21,10 @@
 </template>
 
 <script>
-  import submitMixin from '@/mixins/submit'
+  import submitMixin from '../../../src/mixins/submit'
 
   export default {
-    name: "BnInput",
+    name: "BocInput",
     props: {
       value: {
         type: String

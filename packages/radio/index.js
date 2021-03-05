@@ -1,8 +1,8 @@
-import BnRadio from './src/radio';
+import BocRadio from './src/radio';
 
 /* istanbul ignore next */
-BnRadio.install = function(Vue) {
-  Vue.component(BnRadio.name, BnRadio);
+BocRadio.install = function(Vue) {
+  Vue.component(BocRadio.name, BocRadio);
 };
 
-export default BnRadio;
+export default BocRadio;

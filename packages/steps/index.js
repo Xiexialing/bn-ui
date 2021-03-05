@@ -1,8 +1,8 @@
-import BnSteps from './src/steps';
+import BocSteps from './src/steps';
 
 /* istanbul ignore next */
-BnSteps.install = function(Vue) {
-  Vue.component(BnSteps.name, BnSteps);
+BocSteps.install = function(Vue) {
+  Vue.component(BocSteps.name, BocSteps);
 };
 
-export default BnSteps;
+export default BocSteps;

@@ -11,7 +11,7 @@
 
 <script>
   export default {
-    name: "BnButton",
+    name: "BocButton",
     props: {
       type: {
         type: String,

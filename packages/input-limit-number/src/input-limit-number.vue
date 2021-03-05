@@ -13,16 +13,16 @@
         @keydown.native.enter="onKeydown"
       />
       <div class="limit-wrapper">
-        <bn-input disabled :value="limitWords + max"/>
+        <boc-input disabled :value="limitWords + max"/>
       </div>
     </div>
   </el-form-item>
 </template>
 
 <script>
-  import submitMixin from '@/mixins/submit'
+  import submitMixin from '../../../src/mixins/submit'
   export default {
-    name: "BnInputLimitNumber",
+    name: "BocInputLimitNumber",
     props: {
       value: {
         type: Number

@@ -1,8 +1,8 @@
-import BnCard from './src/card';
+import BocCard from './src/card';
 
 /* istanbul ignore next */
-BnCard.install = function(Vue) {
-  Vue.component(BnCard.name, BnCard);
+BocCard.install = function(Vue) {
+  Vue.component(BocCard.name, BocCard);
 };
 
-export default BnCard;
+export default BocCard;

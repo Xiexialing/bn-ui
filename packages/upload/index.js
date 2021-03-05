@@ -1,8 +1,8 @@
-import BnUpload from './src/upload';
+import BocUpload from './src/upload';
 
 /* istanbul ignore next */
-BnUpload.install = function(Vue) {
-  Vue.component(BnUpload.name, BnUpload);
+BocUpload.install = function(Vue) {
+  Vue.component(BocUpload.name, BocUpload);
 };
 
-export default BnUpload;
+export default BocUpload;

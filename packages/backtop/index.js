@@ -1,8 +1,8 @@
-import BnBacktop from './src/backtop';
+import BocBacktop from './src/backtop';
 
 /* istanbul ignore next */
-BnBacktop.install = function(Vue) {
-  Vue.component(BnBacktop.name, BnBacktop);
+BocBacktop.install = function(Vue) {
+  Vue.component(BocBacktop.name, BocBacktop);
 };
 
-export default BnBacktop;
+export default BocBacktop;

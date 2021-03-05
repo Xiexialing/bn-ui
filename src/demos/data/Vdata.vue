@@ -1,30 +1,30 @@
 <template>
   <div>
-    <bn-tag
+    <boc-tag
       label="标签一"
       closable
     />
-    <bn-progress
+    <boc-progress
       :percentage="12"
       type="dashboard"
     />
-    <bn-tree
+    <boc-tree
       :data="data"
       show-checkbox
       lazy
       :load="loadNode"
       @node-click="onNodeClick"
     />
-    <bn-pagination
+    <boc-pagination
       :size.sync="query.size"
       :current.sync="query.current"
       :total="30"
       @change="onPageChange"
     />
-    <bn-badge :value="12" is-dot>
-      <bn-button size="small">评论</bn-button>
-    </bn-badge>
-    <bn-avatar />
+    <boc-badge :value="12" is-dot>
+      <boc-button size="small">评论</boc-button>
+    </boc-badge>
+    <boc-avatar />
   </div>
 </template>
 

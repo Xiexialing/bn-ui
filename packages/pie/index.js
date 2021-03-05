@@ -1,8 +1,8 @@
-import BnPie from './src/pie';
+import BocPie from './src/pie';
 
 /* istanbul ignore next */
-BnPie.install = function(Vue) {
-  Vue.component(BnPie.name, BnPie);
+BocPie.install = function(Vue) {
+  Vue.component(BocPie.name, BocPie);
 };
 
-export default BnPie;
+export default BocPie;

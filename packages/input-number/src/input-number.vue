@@ -14,9 +14,9 @@
 </template>
 
 <script>
-  import submitMixin from '@/mixins/submit'
+  import submitMixin from '../../../src/mixins/submit'
   export default {
-    name: "BnInputNumber",
+    name: "BocInputNumber",
     props: {
       value: {
         type: Number

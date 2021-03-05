@@ -16,7 +16,7 @@
 
 <script>
   export default {
-    name: "BnCollapse",
+    name: "BocCollapse",
     props: {
       value: {
         type: String | Number,

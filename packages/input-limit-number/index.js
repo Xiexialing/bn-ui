@@ -1,8 +1,8 @@
-import BnInputLimitNumber from './src/input-limit-number';
+import BocInputLimitNumber from './src/input-limit-number';
 
 /* istanbul ignore next */
-BnInputLimitNumber.install = function (Vue) {
-  Vue.component(BnInputLimitNumber.name, BnInputLimitNumber);
+BocInputLimitNumber.install = function (Vue) {
+  Vue.component(BocInputLimitNumber.name, BocInputLimitNumber);
 };
 
-export default BnInputLimitNumber;
+export default BocInputLimitNumber;

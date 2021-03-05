@@ -17,7 +17,7 @@
 
 <script>
   export default {
-    name: "BnPagination",
+    name: "BocPagination",
     props: {
       current: {
         type: Number,

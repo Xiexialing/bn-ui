@@ -1,8 +1,8 @@
-import BnStatus from './src/status';
+import BocStatus from './src/status';
 
 /* istanbul ignore next */
-BnStatus.install = function(Vue) {
-  Vue.component(BnStatus.name, BnStatus);
+BocStatus.install = function(Vue) {
+  Vue.component(BocStatus.name, BocStatus);
 };
 
-export default BnStatus;
+export default BocStatus;

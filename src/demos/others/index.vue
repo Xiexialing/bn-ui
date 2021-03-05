@@ -1,79 +1,79 @@
 <template>
   <div>
-    <bn-button @click="onClick">新增</bn-button>
+    <boc-button @click="onClick">新增</boc-button>
     <br/>
     <br/>
     <br/>
     <br/>
-    <bn-tooltip content="111111">
-      <bn-button>默认上边</bn-button>
-    </bn-tooltip>
-    <bn-popover content="这是一段内容,这是一段内容,这是一段内容,这是一段内容">
-      <bn-table :columns="columns" :data-source="dataSource" :loading="loading"/>
+    <boc-tooltip content="111111">
+      <boc-button>默认上边</boc-button>
+    </boc-tooltip>
+    <boc-popover content="这是一段内容,这是一段内容,这是一段内容,这是一段内容">
+      <boc-table :columns="columns" :data-source="dataSource" :loading="loading"/>
       <el-button slot="reference">hover 激活</el-button>
-    </bn-popover>
-    <bn-popconfirm title="这是一段内容确定删除吗？">
-      <bn-button>删除</bn-button>
-    </bn-popconfirm>
-    <bn-card header="卡片名称">
+    </boc-popover>
+    <boc-popconfirm title="这是一段内容确定删除吗？">
+      <boc-button>删除</boc-button>
+    </boc-popconfirm>
+    <boc-card header="卡片名称">
       <!--格式固定-->
       <template slot="header">
         <span>卡片名称</span>
         <div>
-          <bn-text-button>操作按钮1</bn-text-button>
-          <bn-text-button>操作按钮2</bn-text-button>
-          <bn-text-button>操作按钮3</bn-text-button>
+          <boc-text-button>操作按钮1</boc-text-button>
+          <boc-text-button>操作按钮2</boc-text-button>
+          <boc-text-button>操作按钮3</boc-text-button>
         </div>
       </template>
       <div v-for="o in 4" :key="o">
         {{'列表内容 ' + o }}
       </div>
-    </bn-card>
-    <bn-collapse :data="collapse"/>
-    <bn-list-card header="列表" :columns="listCardColumns" status :dataSource="listCardDataSource"/>
+    </boc-card>
+    <boc-collapse :data="collapse"/>
+    <boc-list-card header="列表" :columns="listCardColumns" status :dataSource="listCardDataSource"/>
     <el-row>
       <el-col :span="12">
         <el-col :span="12">
-          <bn-list-card header="列表" direction="tb" :split-num="3" :columns="listCardColumns2"
+          <boc-list-card header="列表" direction="tb" :split-num="3" :columns="listCardColumns2"
                         :dataSource="listCardDataSource2"/>
         </el-col>
         <el-col :span="12">
-          <bn-list-card header="列表" direction="tb" :split-num="3" :columns="listCardColumns2"
+          <boc-list-card header="列表" direction="tb" :split-num="3" :columns="listCardColumns2"
                         :dataSource="listCardDataSource2"/>
         </el-col>
         <el-col :span="12">
-          <bn-list-card header="列表" direction="tb" :split-num="3" :columns="listCardColumns2"
+          <boc-list-card header="列表" direction="tb" :split-num="3" :columns="listCardColumns2"
                         :dataSource="listCardDataSource2"/>
         </el-col>
         <el-col :span="12">
-          <bn-list-card header="列表" direction="tb" :split-num="3" :columns="listCardColumns2"
+          <boc-list-card header="列表" direction="tb" :split-num="3" :columns="listCardColumns2"
                         :dataSource="listCardDataSource2"/>
         </el-col>
       </el-col>
     </el-row>
 
-    <bn-timeline :data="timeline"/>
-    <bn-divider>
+    <boc-timeline :data="timeline"/>
+    <boc-divider>
       少量的邪恶足以抵消全部高贵的品质, 害得人声名狼藉
-    </bn-divider>
-    <bn-divider>
+    </boc-divider>
+    <boc-divider>
       少量的邪恶足以抵消全部高贵的品质, 害得人声名狼藉
-    </bn-divider>
-    <bn-divider>
-    </bn-divider>
-    <bn-divider>
+    </boc-divider>
+    <boc-divider>
+    </boc-divider>
+    <boc-divider>
       <i class="el-icon-mobile-phone"></i>
-    </bn-divider>
+    </boc-divider>
     <span>雨纷纷</span>
-    <bn-divider direction="vertical"></bn-divider>
+    <boc-divider direction="vertical"></boc-divider>
     <span>旧故里</span>
-    <bn-divider direction="vertical"></bn-divider>
+    <boc-divider direction="vertical"></boc-divider>
     <span>草木深</span>
-    <bn-calendar :range="['2019-03-04', '2019-03-24']" v-model="value"/>
-    <bn-image src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"
+    <boc-calendar :range="['2019-03-04', '2019-03-24']" v-model="value"/>
+    <boc-image src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"
               :preview-src-list="srcList"
     />
-    <bn-button @click="drawerVisible = true">打开抽屉</bn-button>
+    <boc-button @click="drawerVisible = true">打开抽屉</boc-button>
     <Drawer :visible.sync="drawerVisible" v-if="drawerVisible"/>
     <AddUserDialog :visible.sync="visible" v-if="visible"/>
   </div>
@@ -96,7 +96,7 @@
           label: '应用',
           filedName: 'applicationName',
           render: (createElement, data) => {
-            return createElement('bn-link', 'dasda-dasdasd')
+            return createElement('boc-link', 'dasda-dasdasd')
           }
         }, {
           label: '数量1',
@@ -111,14 +111,14 @@
           label: '分区',
           filedName: 'partitionName',
           render: (createElement, data) => {
-            return createElement('bn-text-button', '11-222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222')
+            return createElement('boc-text-button', '11-222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222')
           }
         },
         {
           label: '节点',
           filedName: 'hostName',
           render: (createElement, data) => {
-            return createElement('bn-text-button', '11-222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222')
+            return createElement('boc-text-button', '11-222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222')
           }
         }
       ]
@@ -139,7 +139,7 @@
         },
         {
           label: '异常',
-          filedName: 'abnormal',
+          filedName: 'abocormal',
           fontType: 'warning'
         }
       ]
@@ -188,7 +188,7 @@
         listCardDataSource2: {
           total: 12,
           normal: 15,
-          abnormal: 13
+          abocormal: 13
         },
         list: [
           {
@@ -201,7 +201,7 @@
               {
                 label: '所属应用',
                 render: (createElement) => {
-                  return createElement('bn-link', {
+                  return createElement('boc-link', {
                     on: {
                       click: () => {
                         this.$router.push('/43')
@@ -213,7 +213,7 @@
               {
                 label: '分区',
                 render: (createElement) => {
-                  return createElement('bn-link', {
+                  return createElement('boc-link', {
                     on: {
                       click: () => {
                         this.$router.push('/part34')

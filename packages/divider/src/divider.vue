@@ -6,6 +6,6 @@
 
 <script>
   export default {
-    name: "BnDivider"
+    name: "BocDivider"
   }
 </script>

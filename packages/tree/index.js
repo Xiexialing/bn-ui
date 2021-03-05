@@ -1,8 +1,8 @@
-import BnTree from './src/tree';
+import BocTree from './src/tree';
 
 /* istanbul ignore next */
-BnTree.install = function (Vue) {
-  Vue.component(BnTree.name, BnTree);
+BocTree.install = function (Vue) {
+  Vue.component(BocTree.name, BocTree);
 };
 
-export default BnTree;
+export default BocTree;

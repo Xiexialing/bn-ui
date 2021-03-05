@@ -9,13 +9,13 @@
     @close="onClose"
     style="height: inherit;"
   >
-    <BnMenuItem :data="menuList"/>
+    <BocMenuItem :data="menuList"/>
   </el-menu>
 </template>
 
 <script>
   import _ from 'lodash'
-  import BnMenuItem from './menu-item'
+  import BocMenuItem from './menu-item'
 
   // 給菜单添加level层级字段  第一层是0
   const recursion = (source, index) => {
@@ -29,7 +29,7 @@
   }
 
   export default {
-    name: "BnMenu",
+    name: "BocMenu",
     props: {
       data: {
         type: Array,
@@ -65,7 +65,7 @@
       }
     },
     components: {
-      BnMenuItem
+      BocMenuItem
     }
   }
 </script>

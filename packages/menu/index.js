@@ -1,8 +1,8 @@
-import BnMenu from './src/menu';
+import BocMenu from './src/menu';
 
 /* istanbul ignore next */
-BnMenu.install = function(Vue) {
-  Vue.component(BnMenu.name, BnMenu);
+BocMenu.install = function(Vue) {
+  Vue.component(BocMenu.name, BocMenu);
 };
 
-export default BnMenu;
+export default BocMenu;

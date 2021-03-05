@@ -1,8 +1,8 @@
-import BnImage from './src/image';
+import BocImage from './src/image';
 
 /* istanbul ignore next */
-BnImage.install = function(Vue) {
-  Vue.component(BnImage.name, BnImage);
+BocImage.install = function(Vue) {
+  Vue.component(BocImage.name, BocImage);
 };
 
-export default BnImage;
+export default BocImage;

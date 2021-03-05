@@ -17,7 +17,7 @@
             {{item.label}}
           </div>
         </template>
-        <bn-menu-item :data="item.children" v-bind="$attrs"></bn-menu-item>
+        <boc-menu-item :data="item.children" v-bind="$attrs"></boc-menu-item>
       </el-submenu>
     </template>
   </div>
@@ -25,7 +25,7 @@
 
 <script>
   export default {
-    name: "bnMenuItem",
+    name: "bocMenuItem",
     props: {
       data: {
         type: Array

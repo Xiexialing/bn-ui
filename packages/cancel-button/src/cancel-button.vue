@@ -11,7 +11,7 @@
 
 <script>
   export default {
-    name: "BnCancelButton",
+    name: "BocCancelButton",
     props: {
       type: {
         type: String,

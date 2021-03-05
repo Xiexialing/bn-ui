@@ -1,8 +1,8 @@
-import BnRate from './src/rate';
+import BocRate from './src/rate';
 
 /* istanbul ignore next */
-BnRate.install = function(Vue) {
-  Vue.component(BnRate.name, BnRate);
+BocRate.install = function(Vue) {
+  Vue.component(BocRate.name, BocRate);
 };
 
-export default BnRate;
+export default BocRate;

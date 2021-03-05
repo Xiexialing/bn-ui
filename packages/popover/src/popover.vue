@@ -14,7 +14,7 @@
 
 <script>
   export default {
-    name: "BnPopover",
+    name: "BocPopover",
     props: {
       content: {
         type: String

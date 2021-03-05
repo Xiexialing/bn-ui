@@ -13,7 +13,7 @@
 
 <script>
   export default {
-    name: "BnPageHeader",
+    name: "BocPageHeader",
     props: {
       content: {
         type: String,

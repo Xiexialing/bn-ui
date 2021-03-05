@@ -13,7 +13,7 @@
       <slot/>
     </el-form>
     <div slot="footer" class="dialog-footer">
-      <bn-cancel-button @click="onCancel" size="small">取 消</bn-cancel-button>
+      <boc-cancel-button @click="onCancel" size="small">取 消</boc-cancel-button>
       <el-button type="primary" @click="onConfirm" size="small" :loading="loading">确 定</el-button>
     </div>
   </el-dialog>
@@ -22,7 +22,7 @@
 
 <script>
   export default {
-    name: "BnDialog",
+    name: "BocDialog",
     props: {
       title: {
         type: String,

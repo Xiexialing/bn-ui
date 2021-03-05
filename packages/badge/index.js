@@ -1,8 +1,8 @@
-import BnBadge from './src/badge';
+import BocBadge from './src/badge';
 
 /* istanbul ignore next */
-BnBadge.install = function(Vue) {
-  Vue.component(BnBadge.name, BnBadge);
+BocBadge.install = function(Vue) {
+  Vue.component(BocBadge.name, BocBadge);
 };
 
-export default BnBadge;
+export default BocBadge;

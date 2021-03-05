@@ -1,8 +1,8 @@
-import BnSwitch from './src/switch';
+import BocSwitch from './src/switch';
 
 /* istanbul ignore next */
-BnSwitch.install = function(Vue) {
-  Vue.component(BnSwitch.name, BnSwitch);
+BocSwitch.install = function(Vue) {
+  Vue.component(BocSwitch.name, BocSwitch);
 };
 
-export default BnSwitch;
+export default BocSwitch;

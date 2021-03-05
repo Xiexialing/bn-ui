@@ -1,8 +1,8 @@
 <template>
-  <bn-dialog :visible="visible" @close="onClose" :model="form" :rules="rules" :submit="onSubmit">
-    <bn-input prop="name" label="用户名称" v-model="form.name"/>
-    <bn-input prop="region" label="区域" v-model="form.region"/>
-  </bn-dialog>
+  <boc-dialog :visible="visible" @close="onClose" :model="form" :rules="rules" :submit="onSubmit">
+    <boc-input prop="name" label="用户名称" v-model="form.name"/>
+    <boc-input prop="region" label="区域" v-model="form.region"/>
+  </boc-dialog>
 </template>
 
 <script>

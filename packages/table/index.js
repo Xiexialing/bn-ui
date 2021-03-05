@@ -1,8 +1,8 @@
-import BnTable from './src/table';
+import BocTable from './src/table';
 
 /* istanbul ignore next */
-BnTable.install = function (Vue) {
-  Vue.component(BnTable.name, BnTable);
+BocTable.install = function (Vue) {
+  Vue.component(BocTable.name, BocTable);
 };
 
-export default BnTable;
+export default BocTable;

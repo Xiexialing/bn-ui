@@ -1,8 +1,8 @@
-import BnCalendar from './src/calendar';
+import BocCalendar from './src/calendar';
 
 /* istanbul ignore next */
-BnCalendar.install = function(Vue) {
-  Vue.component(BnCalendar.name, BnCalendar);
+BocCalendar.install = function(Vue) {
+  Vue.component(BocCalendar.name, BocCalendar);
 };
 
-export default BnCalendar;
+export default BocCalendar;

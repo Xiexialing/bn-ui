@@ -1,8 +1,8 @@
-import BnPageHeader from './src/page-header';
+import BocPageHeader from './src/page-header';
 
 /* istanbul ignore next */
-BnPageHeader.install = function(Vue) {
-  Vue.component(BnPageHeader.name, BnPageHeader);
+BocPageHeader.install = function(Vue) {
+  Vue.component(BocPageHeader.name, BocPageHeader);
 };
 
-export default BnPageHeader;
+export default BocPageHeader;

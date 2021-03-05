@@ -23,7 +23,7 @@ maxActions  number 直观显示按钮数，大于这个值时，部分按钮将�
           @click="btn.action(row, $index)"
         />
         <!--图标模式-->
-        <bn-button
+        <boc-button
           v-else
           type="text"
           :disabled="btn.disabled"
@@ -31,7 +31,7 @@ maxActions  number 直观显示按钮数，大于这个值时，部分按钮将�
           @click="btn.action(row, $index)"
         >
           {{ btn.title }}
-        </bn-button>
+        </boc-button>
       </el-tooltip>
     </template>
     <el-dropdown v-if="dropdownActions.length">
@@ -62,7 +62,7 @@ maxActions  number 直观显示按钮数，大于这个值时，部分按钮将�
   </div>
 </template>
 <script>
-  import {ACTIONS_MAP} from '@/constants/actionsMap.js'
+  import {ACTIONS_MAP} from '../../../src/constants/actionsMap.js'
 
   const generateActions = (originalActions) => {
     return originalActions.map(action => ({

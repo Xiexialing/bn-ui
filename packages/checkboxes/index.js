@@ -1,8 +1,8 @@
-import BnCheckboxes from './src/checkboxes';
+import BocCheckboxes from './src/checkboxes';
 
 /* istanbul ignore next */
-BnCheckboxes.install = function(Vue) {
-  Vue.component(BnCheckboxes.name, BnCheckboxes);
+BocCheckboxes.install = function(Vue) {
+  Vue.component(BocCheckboxes.name, BocCheckboxes);
 };
 
-export default BnCheckboxes;
+export default BocCheckboxes;

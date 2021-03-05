@@ -1,8 +1,8 @@
-import BnLink from './src/link';
+import BocLink from './src/link';
 
 /* istanbul ignore next */
-BnLink.install = function(Vue) {
-  Vue.component(BnLink.name, BnLink);
+BocLink.install = function(Vue) {
+  Vue.component(BocLink.name, BocLink);
 };
 
-export default BnLink;
+export default BocLink;

@@ -19,7 +19,7 @@
   }
 
   export default {
-    name: 'BnLine',
+    name: 'BocLine',
     props: {
       options: {
         type: Object

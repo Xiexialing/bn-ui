@@ -1,8 +1,8 @@
-import BnDrawer from './src/drawer';
+import BocDrawer from './src/drawer';
 
 /* istanbul ignore next */
-BnDrawer.install = function(Vue) {
-  Vue.component(BnDrawer.name, BnDrawer);
+BocDrawer.install = function(Vue) {
+  Vue.component(BocDrawer.name, BocDrawer);
 };
 
-export default BnDrawer;
+export default BocDrawer;

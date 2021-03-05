@@ -1,8 +1,8 @@
-import BnDropdown from './src/dropdown';
+import BocDropdown from './src/dropdown';
 
 /* istanbul ignore next */
-BnDropdown.install = function(Vue) {
-  Vue.component(BnDropdown.name, BnDropdown);
+BocDropdown.install = function(Vue) {
+  Vue.component(BocDropdown.name, BocDropdown);
 };
 
-export default BnDropdown;
+export default BocDropdown;

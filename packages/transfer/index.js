@@ -1,8 +1,8 @@
-import BnTransfer from './src/transfer';
+import BocTransfer from './src/transfer';
 
 /* istanbul ignore next */
-BnTransfer.install = function(Vue) {
-  Vue.component(BnTransfer.name, BnTransfer);
+BocTransfer.install = function(Vue) {
+  Vue.component(BocTransfer.name, BocTransfer);
 };
 
-export default BnTransfer;
+export default BocTransfer;

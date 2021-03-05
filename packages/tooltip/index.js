@@ -1,8 +1,8 @@
-import BnTooltip from './src/tooltip';
+import BocTooltip from './src/tooltip';
 
 /* istanbul ignore next */
-BnTooltip.install = function(Vue) {
-  Vue.component(BnTooltip.name, BnTooltip);
+BocTooltip.install = function(Vue) {
+  Vue.component(BocTooltip.name, BocTooltip);
 };
 
-export default BnTooltip;
+export default BocTooltip;

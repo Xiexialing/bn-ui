@@ -13,7 +13,7 @@
 
 <script>
   export default {
-    name: "BnAlert",
+    name: "BocAlert",
     props: {
       type: {
         type: String,

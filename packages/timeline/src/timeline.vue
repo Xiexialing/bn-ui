@@ -23,7 +23,7 @@
 
 <script>
   export default {
-    name: "BnTimeline",
+    name: "BocTimeline",
     props: {
       data: {
         type: Array,

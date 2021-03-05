@@ -1,8 +1,8 @@
-import BnPopover from './src/popover';
+import BocPopover from './src/popover';
 
 /* istanbul ignore next */
-BnPopover.install = function (Vue) {
-  Vue.component(BnPopover.name, BnPopover);
+BocPopover.install = function (Vue) {
+  Vue.component(BocPopover.name, BocPopover);
 };
 
-export default BnPopover;
+export default BocPopover;

@@ -52,9 +52,9 @@
 </template>
 
 <script>
-  import submitMixin from '@/mixins/submit'
+  import submitMixin from '../../../src/mixins/submit'
   export default {
-    name: "BnSelect",
+    name: "BocSelect",
     props: {
       value: '',
       options: {

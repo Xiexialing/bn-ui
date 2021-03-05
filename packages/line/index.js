@@ -1,8 +1,8 @@
-import BnLine from './src/line';
+import BocLine from './src/line';
 
 /* istanbul ignore next */
-BnLine.install = function(Vue) {
-  Vue.component(BnLine.name, BnLine);
+BocLine.install = function(Vue) {
+  Vue.component(BocLine.name, BocLine);
 };
 
-export default BnLine;
+export default BocLine;

@@ -1,8 +1,8 @@
-import BnForm from './src/form';
+import BocForm from './src/form';
 
 /* istanbul ignore next */
-BnForm.install = function(Vue) {
-  Vue.component(BnForm.name, BnForm);
+BocForm.install = function(Vue) {
+  Vue.component(BocForm.name, BocForm);
 };
 
-export default BnForm;
+export default BocForm;

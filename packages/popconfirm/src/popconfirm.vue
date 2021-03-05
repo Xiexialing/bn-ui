@@ -14,7 +14,7 @@
 
 <script>
   export default {
-    name: "BnPopconfirm",
+    name: "BocPopconfirm",
     props: {
       title: {
         type: String

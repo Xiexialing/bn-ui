@@ -1,7 +1,7 @@
 <template>
   <div>
-    <bn-alert title="警告提示的文案"></bn-alert>
-    <bn-button @click="onClick">按鈕</bn-button>
+    <boc-alert title="警告提示的文案"></boc-alert>
+    <boc-button @click="onClick">按鈕</boc-button>
   </div>
 </template>
 

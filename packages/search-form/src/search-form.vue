@@ -7,7 +7,7 @@
   >
     <slot :loading="loading" :onSubmit="onSubmit"/>
     <el-form-item v-if="!$slots.footer">
-      <bn-button :loading="loading" type="default" plain icon="el-icon-search" @click="onSubmit">搜 索</bn-button>
+      <boc-button :loading="loading" type="default" plain icon="el-icon-search" @click="onSubmit">搜 索</boc-button>
     </el-form-item>
     <slot v-else name="footer" :loading="loading" :onSubmit="onSubmit"></slot>
   </el-form>
@@ -15,7 +15,7 @@
 
 <script>
   export default {
-    name: "BnSearchForm",
+    name: "BocSearchForm",
     props: {
       'label-width': {
         type: String,

@@ -76,7 +76,7 @@
   }
 
   export default {
-    name: 'BnDashboard',
+    name: 'BocDashboard',
     props: {
       options: {
         type: Object

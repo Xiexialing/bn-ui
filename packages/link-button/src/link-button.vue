@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: "BnLinkButton",
+    name: "BocLinkButton",
     methods: {
       onClick() {
         this.$emit('click')

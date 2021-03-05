@@ -11,7 +11,7 @@
 
 <script>
   export default {
-    name: "BnTextButton",
+    name: "BocTextButton",
     methods: {
       onClick() {
         this.$emit('click')

@@ -2,7 +2,7 @@
   <el-form-item :label="label" :prop="prop" :label-width="labelWidth">
     <div class="bn-upload">
       <div class="upload-main">
-        <bn-input :value="value" :disabled="disabled" @input="onInput" :placeholder="placeholder"/>
+        <boc-input :value="value" :disabled="disabled" @input="onInput" :placeholder="placeholder"/>
         <el-upload
           action
           v-bind="$attrs"
@@ -10,7 +10,7 @@
           :show-file-list="showFileList"
           :on-change="onChange"
         >
-          <bn-button class="el-upload__text" icon="el-icon-upload2">添加本地文件</bn-button>
+          <boc-button class="el-upload__text" icon="el-icon-upload2">添加本地文件</boc-button>
         </el-upload>
       </div>
       <p class=" bn-upload--warning">
@@ -23,7 +23,7 @@
 
 <script>
   export default {
-    name: "BnUpload",
+    name: "BocUpload",
     props: {
       value: {
         type: String

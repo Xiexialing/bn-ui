@@ -13,9 +13,9 @@
 </template>
 
 <script>
-  import submitMixin from '@/mixins/submit'
+  import submitMixin from '../../../src/mixins/submit'
   export default {
-    name: "BnSwitch",
+    name: "BocSwitch",
     props: {
       value: {
         type: Boolean

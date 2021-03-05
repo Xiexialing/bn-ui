@@ -9,7 +9,7 @@
 
 <script>
   export default {
-    name: "BnBadge",
+    name: "BocBadge",
     props: {
       value: {
         type: Number | String

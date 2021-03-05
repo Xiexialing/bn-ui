@@ -21,7 +21,7 @@
 
 <script>
   export default {
-    name: "BnBreadcrumb",
+    name: "BocBreadcrumb",
     props: {
       data: {
         type: Array

@@ -1,8 +1,8 @@
-import BnSelect from './src/select';
+import BocSelect from './src/select';
 
 /* istanbul ignore next */
-BnSelect.install = function(Vue) {
-  Vue.component(BnSelect.name, BnSelect);
+BocSelect.install = function(Vue) {
+  Vue.component(BocSelect.name, BocSelect);
 };
 
-export default BnSelect;
+export default BocSelect;

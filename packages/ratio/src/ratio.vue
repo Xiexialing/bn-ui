@@ -33,7 +33,7 @@
   ]
 
   export default {
-    name: "BnRatio",
+    name: "BocRatio",
     props: {
       height: { // 横向条的高度
         type: Number,

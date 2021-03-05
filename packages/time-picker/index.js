@@ -1,8 +1,8 @@
-import BnTimePicker from './src/time-picker';
+import BocTimePicker from './src/time-picker';
 
 /* istanbul ignore next */
-BnTimePicker.install = function(Vue) {
-  Vue.component(BnTimePicker.name, BnTimePicker);
+BocTimePicker.install = function(Vue) {
+  Vue.component(BocTimePicker.name, BocTimePicker);
 };
 
-export default BnTimePicker;
+export default BocTimePicker;

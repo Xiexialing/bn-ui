@@ -1,8 +1,8 @@
-import BnDialog from './src/dialog';
+import BocDialog from './src/dialog';
 
 /* istanbul ignore next */
-BnDialog.install = function(Vue) {
-  Vue.component(BnDialog.name, BnDialog);
+BocDialog.install = function(Vue) {
+  Vue.component(BocDialog.name, BocDialog);
 };
 
-export default BnDialog;
+export default BocDialog;

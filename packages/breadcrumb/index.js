@@ -1,8 +1,8 @@
-import BnBreadcrumb from './src/breadcrumb';
+import BocBreadcrumb from './src/breadcrumb';
 
 /* istanbul ignore next */
-BnBreadcrumb.install = function (Vue) {
-  Vue.component(BnBreadcrumb.name, BnBreadcrumb);
+BocBreadcrumb.install = function (Vue) {
+  Vue.component(BocBreadcrumb.name, BocBreadcrumb);
 };
 
-export default BnBreadcrumb;
+export default BocBreadcrumb;

@@ -1,8 +1,8 @@
-import BnTag from './src/tag';
+import BocTag from './src/tag';
 
 /* istanbul ignore next */
-BnTag.install = function (Vue) {
-  Vue.component(BnTag.name, BnTag);
+BocTag.install = function (Vue) {
+  Vue.component(BocTag.name, BocTag);
 };
 
-export default BnTag;
+export default BocTag;

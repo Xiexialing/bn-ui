@@ -12,7 +12,7 @@
 
 <script>
   export default {
-    name: "BnLink",
+    name: "BocLink",
     props: {
       type: {
         type: String,

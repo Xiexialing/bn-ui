@@ -21,7 +21,7 @@
 
 <script>
   export default {
-    name: "BnTabs",
+    name: "BocTabs",
     props: {
       tabList: {
         type: Array

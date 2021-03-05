@@ -1,5 +1,5 @@
 <template>
-  <bn-table
+  <boc-table
     :columns='columns'
     :data-source='dataSource'
     :size.sync='query.size'

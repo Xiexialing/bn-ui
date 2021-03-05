@@ -1,8 +1,8 @@
-import BnAvatar from './src/avatar';
+import BocAvatar from './src/avatar';
 
 /* istanbul ignore next */
-BnAvatar.install = function(Vue) {
-  Vue.component(BnAvatar.name, BnAvatar);
+BocAvatar.install = function(Vue) {
+  Vue.component(BocAvatar.name, BocAvatar);
 };
 
-export default BnAvatar;
+export default BocAvatar;
