@@ -13,7 +13,7 @@
       <span>{{dataSource.label}}</span>
     </div>
     <el-row :gutter="20" v-for="(item, index) in cardList" :key="index">
-      <el-col :span="24">
+      <el-col :span="24" v-if="item.label">
         <h1 class="card-title">{{item.label}}</h1>
       </el-col>
       <el-col
@@ -28,7 +28,7 @@
           </bn-tooltip>
         </p>
         <div class="card-item" v-else>
-          <span>{{innerItem.label}}：</span>
+          <span v-if="innerItem.label">{{innerItem.label}}：</span>
           <div class="card-item-value text-ellipsis">
             <bn-tooltip :content="innerItem.value">
               <ListRender class="text-ellipsis" :data="dataSource" :render="innerItem.render"/>
