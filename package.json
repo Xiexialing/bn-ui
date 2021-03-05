@@ -1,6 +1,6 @@
 {
-  "name": "bn-ui",
-  "version": "1.0.7",
+  "name": "bocloud-ui",
+  "version": "1.0.0",
   "description": "基于element-ui搭建的一套符合本公司风格的UI",
   "author": "谢夏岭 <xiexialing@beyondcent.com>",
   "main": "./src/index.js",
@@ -12,13 +12,13 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "echarts": "^5.0.0",
+    "echarts": "^5.0.2",
     "element-ui": "^2.15.0",
     "lodash": "^4.17.20",
     "resize-detector": "^0.2.2",
     "shortid": "^2.2.16",
     "vue": "^2.5.2",
-    "vue-echarts": "^5.0.0-beta.0",
+    "vue-echarts": "^4.1.0",
     "vue-router": "^3.5.1"
   },
   "devDependencies": {
